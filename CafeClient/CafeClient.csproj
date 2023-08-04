@@ -11,9 +11,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="CafeCommon">
-      <HintPath>..\..\CafeCommon\CafeCommon\bin\Debug\net7.0\CafeCommon.dll</HintPath>
-    </Reference>
+    <Reference Include="CafeCommon" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Lib\CafeCommon.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

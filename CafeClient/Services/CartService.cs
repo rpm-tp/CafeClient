@@ -28,12 +28,14 @@ namespace CafeClient.Services
                 await httpClient.PostAsJsonAsync("Orders", _myOrder);
 
                 //Clear Order details after submitting order.
+                ClearCart();
             }
         }
 
         public void ClearCart()
         {
             _myOrder.Drinks.Clear();
+            _myOrder.Name = string.Empty;
         }
 
         public void AddToCart(Drink drink)
